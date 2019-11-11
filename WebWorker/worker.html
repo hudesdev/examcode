@@ -9,14 +9,14 @@
 <p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support Web Workers.</p>
 
 <script>
-var w;
+let worker;
 
 function startWorker() {
   if(typeof(Worker) !== "undefined") {
     if(typeof(w) == "undefined") {
-      w = new Worker("worker.js");
+      worker = new Worker("worker.js");
     }
-    w.onmessage = function(event) {
+    worker.onmessage = function(event) {
       document.getElementById("result").innerHTML = event.data;
     };
   } 
@@ -27,8 +27,8 @@ function startWorker() {
 }
 
 function stopWorker() { 
-  w.terminate();
-  w = undefined;
+  worker.terminate();
+  worker = undefined;
 }
 </script>
 
