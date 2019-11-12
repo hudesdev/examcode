@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let patterns = [
+            /hello/ , // -- match hello 
+            /Hello/ , // -- match Hello
+            /^[A-Z]/, // -- match string that start with capital letter
+            /^[a-z]/, // -- match string that start with lower case letter
+            /^[a-z , A-Z]/, // -- match string that start with any letter
+            /[a-z][0-9][A-Z]/ , // -- match string with lower case letter,  followed by digit ,followed by capital letetr
+            /[a-z][0-9]\s[A-Z]/ , // -- match string with lower case letter,  followed by digit ,followed by space , followed by capital letetr
+            /[a-z]\s*[A-Z]/ , // -- match string with lower case letter,  followed by any number of spaces , followed by capital letetr
+            /[a-z]\s{2}[A-Z]/ , // -- match string with lower case letter,  followed by 2 spaces , followed by capital letetr
+            /\d\d\d-?\d\d\d\d\d\d\d/ , // -- match telphone number with 3 digits , followed by optionaly - , followed by 7 digits
+            ];
+        let texts = [
+            'Hello World' , 'Hello World' , 'a123abcZ' ,'a123abcZ' ,
+            '123abcZ' , '1a5Z7' , '1a5 Z7' , '1a  X5Z7' ,
+            '1a X5Z7' , '0542220074'];
+
+        for (let index = 0; index < texts.length; index++) {
+            const text = texts[index];
+            const pattern = patterns[index];
+            const result = pattern.test(text);
+            
+            console.log(`text : ${text} , pattern : ${pattern} , match found : ${result}`);
+        }
+
+             
+    </script>
+</body>
+</html>

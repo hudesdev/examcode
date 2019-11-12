@@ -97,7 +97,7 @@ const chapters = [
         "Using the this pointer"
       ]),
 
-      new Objective("Create a web worker process", status.red, [
+      new Objective("Create a web worker process", status.green, [
         "Getting started with a web worker process",
         "Creating a worker process with the Web Worker API ",
         "Using web workers ",
