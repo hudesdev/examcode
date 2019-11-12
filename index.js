@@ -113,7 +113,7 @@ const chapters = [
       "Implementing content attributes"
     ]),
 
-    new Objective("Validate user input by using JavaScript", status.red, [
+    new Objective("Validate user input by using JavaScript", status.green, [
       "Evaluating regular expressions",
       "Evaluating regular expressions in JavaScript",
       "Validating data with built-in functions",

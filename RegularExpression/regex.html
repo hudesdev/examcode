@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Regular expression</title>
 </head>
 <body>
     <script>
@@ -19,11 +19,12 @@
             /[a-z]\s*[A-Z]/ , // -- match string with lower case letter,  followed by any number of spaces , followed by capital letetr
             /[a-z]\s{2}[A-Z]/ , // -- match string with lower case letter,  followed by 2 spaces , followed by capital letetr
             /\d\d\d-?\d\d\d\d\d\d\d/ , // -- match telphone number with 3 digits , followed by optionaly - , followed by 7 digits
+            /A$/ , // -- match string that end with A
             ];
         let texts = [
             'Hello World' , 'Hello World' , 'a123abcZ' ,'a123abcZ' ,
             '123abcZ' , '1a5Z7' , '1a5 Z7' , '1a  X5Z7' ,
-            '1a X5Z7' , '0542220074'];
+            '1a X5Z7' , '0542220074' , '123A'];
 
         for (let index = 0; index < texts.length; index++) {
             const text = texts[index];
