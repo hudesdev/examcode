@@ -26,7 +26,7 @@ const chapters = [
       "Optimizing for screen readers"
     ]),
 
-    new Objective("Write code that interacts with UI controls", status.orange, [
+    new Objective("Write code that interacts with UI controls", status.green, [
       "Adding or modifying HTML elements",
       "Implementing media controls",
       "Implementing graphics with HTML5 <canvas> and SVG 39"

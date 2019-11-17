@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Canvas</title>
+    <style>
+    #canvas1{
+        border: 1px solid black;
+    }
+    </style>
+</head>
+<body>
+    <h2>Draw graphics on the fly using HTML5 canvas</h2>
+    <button onclick="drawDiagonalLine()">Draw Diagonal Line</button>
+    <button onclick="drawText()">Draw Text</button>
+    <br><br>
+    <h2>canvas</h2>
+    <canvas id="canvas1" width="200" height="100"></canvas>
+    <script>
+    const canvasObj = document.getElementById('canvas1');
+    const context = canvasObj.getContext('2d');
+
+    const width = 200;
+    const height = 100;
+
+    function drawText(){
+        context.font = "22px arial";
+        context.strokeText("Text with arial font", 10, height/2);
+    }
+
+    function drawDiagonalLine()
+    {
+        context.beginPath()
+        context.moveTo(0,0);
+        context.lineTo(width,height);
+        context.moveTo(width,0);
+        context.lineTo(0,height);
+        context.strokeStyle= 'red';
+        context.stroke();
+    }
+    </script>
+</body>
+</html>
