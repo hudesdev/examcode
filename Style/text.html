@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Style Text</title>
+    <style>
+        a{
+            padding: 5px;
+            font-size: 20px;;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu"></div>
+    <hr>
+    <h1 id="fontface" style="color:red;">todo @font-face</h1>
+    p{
+        font-family:Arial,'Times New Roman',Webdings;
+    }
+    <p> This CSS code renders the fonts in order from left to right until it finds one that is available
+        on the client computer. If the font name contains spaces, it must be contained within quotes.
+        If none of the specified fonts are available, the text falls back to the browser’s default font.
+        In the previous example, the client looks first for the Arial font. If that is not installed, it then
+        looks for the Times New Roman font, and so on. This is a simple approach, but many people
+        prefer to use fonts that are not available on the system. There are many custom fonts available
+        on the Internet for inclusion in your web applications. These fonts are known as WOFF
+        (Web Open Font Format). To use these fonts in your webpage, you define a font family using
+        the special keyword @font-face.
+    </p>
+    
+    <p>
+        The following code defines a @font-face for a webpage and implements it for the
+        elements of the page:
+        <p>@font-face {</p>
+        <p>font-family: "My Nicer Font";</p>
+        <p></p>src: url('fonts/my_woff_font.eot');</p>
+        <p></p>src: url('fonts/my_woff_font.woff');</p>
+        }</p>
+        p {
+        font-family: 'My Nicer Font';
+        }
+    </p>
+
+    <hr>
+    <h1 id="lp">letter-spacing</h1>
+    
+    <h3>letter spacing is small</h3>
+    <p style="letter-spacing: 2px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae quam aperiam nesciunt vero et aspernatur quis, veniam voluptatem? Explicabo velit libero consequuntur dolore quia excepturi nam minus earum quod in.</p>
+
+    <h3>letter spacing is big</h3>
+    <p style="letter-spacing: 6px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae quam aperiam nesciunt vero et aspernatur quis, veniam voluptatem? Explicabo velit libero consequuntur dolore quia excepturi nam minus earum quod in.</p>
+    <hr>
+    <h1 id="ws">word-spacing</h1>
+
+    <h3>word spacing is small</h3>
+    <p style="word-spacing: 2px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae quam aperiam nesciunt vero et aspernatur quis, veniam voluptatem? Explicabo velit libero consequuntur dolore quia excepturi nam minus earum quod in.</p>
+
+    <h3>word spacing is big</h3>
+    <p style="word-spacing: 6px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae quam aperiam nesciunt vero et aspernatur quis, veniam voluptatem? Explicabo velit libero consequuntur dolore quia excepturi nam minus earum quod in.</p>
+
+    <hr>
+    <h1 id="hyphens">hyphens</h1>
+    <H2>hyphens: none -> Words will not break with a hyphen and the sentence will only break on whitespace.</H2>
+    <p style='hyphens: none;'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam molestiae repellat officia, cupiditate debitis deleniti. Possimus excepturi, nesciunt quos illum adipisci, facere quidem ducimus, harum quia rerum molestiae. Iure illo eveniet quam quasi cupiditate, similique sequi accusantium vitae obcaecati voluptates consequuntur quaerat earum officiis maxime sapiente! Repellendus a sunt molestiae harum molestias, aut consectetur cupiditate. Facere sunt quos laboriosam quae, vitae magnam adipisci unde consequatur praesentium ipsa eum fugit neque corporis perspiciatis commodi obcaecati aliquam odio totam excepturi voluptas corrupti nulla! Nobis labore animi odit eveniet et maxime magnam, provident in est quo sunt placeat at mollitia sequi sed maiores!</p>
+    
+    <hr>
+    <h1 id="justify">text-align:justify</h1>
+    <h3 >next paragraph is styled using text-align:justify. Notice the left and right side</h3>
+    <p style="text-align:justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quo maxime recusandae non quis placeat, nihil ratione eveniet obcaecati enim quibusdam sapiente ut corporis doloribus veniam sint. Obcaecati, eos. Temporibus laudantium consequatur ducimus necessitatibus ipsum architecto impedit rem cupiditate molestias fuga saepe, neque mollitia nesciunt beatae, excepturi consequuntur culpa esse. Sapiente, officiis laboriosam ex recusandae minus ratione sunt voluptatibus eaque unde sint, suscipit saepe. Consequuntur accusantium, amet atque tempore cum quos, nesciunt, dolorum consectetur ratione natus ipsum labore in perferendis enim quod porro sit fuga corporis quas aut nisi. Assumenda dolorem facere similique fugiat at, odit vero eum. Neque molestiae eum rem vitae ad fuga temporibus magnam sint consectetur illum, doloremque officiis reprehenderit animi itaque minus quaerat ut eos repudiandae error inventore repellendus culpa beatae ea? Non, mollitia eaque adipisci, illo nulla velit voluptatem, consectetur repellendus totam eum illum facilis delectus beatae hic distinctio ratione officia veritatis sapiente quo expedita laudantium iste iusto voluptates exercitationem. Voluptas voluptatem odio, id, obcaecati nam veritatis nisi corrupti doloremque adipisci hic voluptatibus sint vel vitae ea saepe quis quam rem provident, quos optio. Amet, qui! Nostrum, veritatis illo aspernatur nulla et, cum ab placeat fugit blanditiis asperiores, inventore distinctio perferendis. Id minus sed vero.</p>
+
+    <h3 >next paragraph is NOT styled using text-align</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vel possimus cumque animi dicta illum totam nisi voluptatum autem nam voluptas iure nobis accusamus vitae, perferendis sapiente repudiandae delectus. Esse recusandae nemo tempore debitis, consectetur nam minus possimus, voluptas harum nulla dicta. Quo quidem culpa sit, quibusdam esse fugit pariatur quae aspernatur sunt nobis, accusamus adipisci est ab consequatur quos assumenda aliquam perferendis fuga corporis! Consectetur, numquam? Voluptatum saepe quas vitae consequatur repudiandae voluptatibus recusandae, laboriosam assumenda pariatur, a quasi, error dolor! Maxime id consequuntur placeat, accusamus reprehenderit sapiente eos deserunt animi, nemo voluptate ipsa rerum officia laudantium rem laboriosam aliquam ad repudiandae veniam? Non laudantium iure deleniti, facilis quas praesentium error doloribus, sapiente necessitatibus molestiae eius inventore at. Provident ipsum rerum saepe obcaecati voluptatem? Neque distinctio, voluptatum aliquam ipsam blanditiis provident minus ea voluptate quo quaerat nisi? Maxime fugit voluptatum quam possimus illo accusantium consequuntur, in odio, eos, repellat ipsa nihil quod labore. Commodi facilis aliquam pariatur aut laudantium ipsum itaque atque maiores cupiditate dolor. Laudantium possimus officiis, omnis a eveniet qui quisquam molestiae iste debitis eaque aliquam reprehenderit iure hic quaerat laborum dolore sed, velit explicabo voluptatem quo ab impedit perspiciatis quam! Voluptatum amet quia odit obcaecati eaque!</p>
+
+    <hr>
+    <h1 id="indent">text-indent</h1>
+
+    <h2>text-indent: 50px:</h2>
+    <div style="text-indent: 50px;">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi hic debitis temporibus, dignissimos reprehenderit, provident officia doloremque rerum, asperiores ad quam. Sed, dolorum. Placeat eligendi deserunt similique optio vel vero perspiciatis, quae est quia mollitia eos, tempore sequi earum fugit accusantium. Id voluptatem impedit quisquam architecto earum iste! Pariatur aliquam, possimus necessitatibus quis corporis vel. Praesentium amet consectetur magni quasi sequi, vitae minima maxime quaerat. Natus inventore eaque voluptatibus enim, recusandae unde reiciendis rerum nihil consequatur vel sunt consequuntur saepe dolores temporibus aut autem. Facilis a, sed repellat, voluptatibus natus quasi assumenda incidunt nobis harum voluptatum soluta deserunt laudantium odit!</p>
+    </div>
+
+    <h2>text-indent: -3rem:</h2>
+    <div style="text-indent: -3rem;">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates voluptatum aspernatur saepe atque in! Magnam repellat aliquid nihil maiores debitis quidem tempore veniam optio repellendus. Tenetur culpa assumenda laboriosam consectetur, dolorum voluptatibus dolorem explicabo rem quidem ad placeat iusto quam nulla possimus, exercitationem sunt odio architecto animi velit deleniti odit quos necessitatibus! Animi veniam, blanditiis, vero sequi excepturi repellat molestias error dolorem libero neque cupiditate dolorum dicta minima sunt omnis. Pariatur nesciunt hic deleniti odio cumque exercitationem rem dignissimos, iste voluptatem velit perferendis quod doloribus temporibus animi dolorum excepturi quasi quae est, maxime recusandae quam unde. Suscipit eligendi repudiandae deleniti.</p>
+    </div>
+
+    <h2>text-indent: 30%:</h2>
+    <div style="text-indent: 30%;">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, ipsa quasi. Accusantium, exercitationem quo minus rem nulla id possimus aliquid aperiam soluta ducimus aliquam at reiciendis velit laborum ut? Itaque odit pariatur facere voluptatum, ratione cupiditate minus libero rerum reprehenderit quas accusamus praesentium deleniti modi sapiente nobis! Nam veniam facilis porro hic laborum beatae distinctio dolore consectetur ad tenetur maxime dolorum, est voluptate ipsa blanditiis, labore numquam deleniti voluptatibus ex ducimus itaque? Ratione aperiam, minima nemo quisquam sit vitae rerum possimus doloremque! Asperiores quia maxime id officiis ratione hic provident obcaecati sint velit est. Corrupti dolore neque alias ducimus. Tenetur.</p>
+    </div>
+    
+    <script>
+        let h1Container = document.querySelectorAll('h1');
+        for (let index = 0; index < h1Container.length; index++) {
+            const elementH1 = h1Container[index];
+            document.getElementById('menu').innerHTML += 
+            `<a href='#${elementH1.id}'>${elementH1.innerText}</a>`
+        }
+    </script>
+</body>
+</html>

@@ -88,7 +88,7 @@ const chapters = [
         "Checking for null values"
       ]),
 
-      new Objective("Implement a callback", status.orange, [
+      new Objective("Implement a callback", status.green, [
         "Implementing bidirectional communication with the",
         "WebSocket API ",
         "Making webpages dynamic with jQuery and AJAX ",
@@ -133,7 +133,7 @@ const chapters = [
   ]),
 
   new Chapter("Use CSS3 in applications", [
-    new Objective("Style HTML text properties", status.orange, [
+    new Objective("Style HTML text properties", status.green, [
       "Apply styles to text appearance",
       "Apply styles to text font",
       "Applying styles to text alignment, spacing, and indentation",
