@@ -155,7 +155,7 @@ const chapters = [
       "Implementing a layout using regions, grouping, and nesting"
     ]),
 
-    new Objective("Create an animated and adaptive UI", status.orange, [
+    new Objective("Create an animated and adaptive UI", status.green, [
       "Animating objects by applying CSS transitions",
       "Applying 3-D and 2-D transformations",
       "Adjusting UI based on media queries",

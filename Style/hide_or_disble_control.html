@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hide or Disable</title>
+    <style>
+        .border{
+            border : 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h2>Show \ Hide using display</h2>
+    <button onclick="showHideHandler(this)">Hide</button>
+    <br>
+    <span>span 1</span><span id='span2' class="border"> span 2</span><span> span 3</span>
+    <hr>
+    <h2>Enable \ Disable using visibility</h2>
+    <button onclick="enableDisableHandler(this)">Disable</button>
+    <br>
+    <span>span 4</span><span id='span5' class="border"> span 5</span><span> span 6</span>
+    <script>
+        const span2Obj = document.getElementById('span2');
+        const span5Obj = document.getElementById('span5');
+
+        function enableDisableHandler(_this){
+            if(_this.innerText == 'Enable'){
+                span5Obj.style.visibility = 'visible';
+                _this.innerText = 'Disable'
+            }
+            else{
+                span5Obj.style.visibility  = 'hidden';
+                _this.innerText = 'Enable';
+            }
+        }
+
+        function showHideHandler(_this){
+            if(_this.innerText == 'Show'){
+                span2Obj.style.display = 'inline';
+                _this.innerText = 'Hide'
+            }
+            else{
+                span2Obj.style.display = 'none';
+                _this.innerText = 'Show';
+            }
+        }
+
+    </script>
+</body>
+</html>
